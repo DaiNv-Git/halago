@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="85210d24-4539-4768-af2e-7a735dc4b8f2" name="Changes" comment="remove and clean code">
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/commons-logging-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/fluent-hc-4.5.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/gson-2.8.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/httpclient-4.5.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/httpcore-4.4.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/javax.ejb.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/javax.jms.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/javax.persistence.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/javax.resource.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/javax.servlet.jsp.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/javax.servlet.jsp.jstl.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/javax.transaction.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/sinetfactory.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logging-spring.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/HalagoApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/ServletInitializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/config/Constant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/config/SwaggerConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/controller/AboutUsController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/controller/ApproveController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/controller/BookKolsController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/controller/BrandController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/controller/BrandPortalController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/controller/CampaignController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/controller/ContactCustomerController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/controller/FileController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/controller/InfluencerController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/controller/IntroduceController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/controller/NewsController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/controller/PersonalController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/controller/PortalController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/controller/RolePersonalController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/controller/RoleProjectController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/controller/StaffController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/controller/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/filter/FilterBase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/filter/IPFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/filter/MultiReadHttpServletRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/filter/MultiReadHttpServletResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/AboutUs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/AboutUsLanguage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/Api.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/Approve.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/BookKols.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/BookKolsLanguage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/Brand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/BrandPortal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/BrandPortalLanguage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/Campaign.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/Career.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/ChannelInteraction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/City.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/ContactCustomer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/Facebook.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/Footer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/FooterLanguage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/Function.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/FunctionApi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/Industry.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/Influencer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/InfluencerPortal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/InfluencerPortalLanguage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/Introduce.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/IntroduceLanguage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/News.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/NewsLanguage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/NewsType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/Personal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/Role.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/RoleFunction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/RolePersonal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/RoleProject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/Roles.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/RolesPersonal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/Slug.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/TypesInteraction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/dao/AboutUs/AboutUsDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/dao/AccountUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/dao/ApproveDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/dao/ApproveInfluencer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/dao/BaseModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/dao/BrandDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/dao/CampaignDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/dao/EmailConfirm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/dao/Error.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/dao/Footer/FooterLanguage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/dao/FunctionApiDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/dao/FunctionDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/dao/NewsDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/dao/NewsTypeDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/dao/PersonalDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/dao/PersonalLoginModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/dao/PersonalMod.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/dao/PersonalModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/dao/PersonalToken.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/dao/RoleAccount.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/dao/RoleDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/dao/RoleFunction/RoleFunction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/dao/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/dao/UserDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/dao/bookKols/BookKolsDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/dao/bookKols/KolsBody.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/dao/bookKols/KolsDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/dao/bookKols/KolsFooter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/dao/bookKols/KolsHeader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/dao/bookKols/KolsMarketing.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/dao/brandPortal/BrandPortal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/dao/brandPortal/BrandPortalBody.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/dao/brandPortal/BrandPortalDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/dao/brandPortal/BrandPortalFooter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/dao/brandPortal/BrandPortalHeader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/dao/influencer/cms/InfluencerApproveCampaignDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/dao/influencer/cms/InfluencerDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/dao/influencer/portal/BodyInfluencerPortal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/dao/influencer/portal/FooterInfluencerPortal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/dao/influencer/portal/HeaderInfluencerPortal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/dao/influencer/portal/InfluencerPortalDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/dao/influencer/portal/InfluencerPortalFooter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/dao/influencer/portal/InfluencerPortalId.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/dao/influencer/portal/InfluencerPortalLanguage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/dao/introduce/Body.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/dao/introduce/BrandDeployment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/dao/introduce/Footer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/dao/introduce/Header.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/dao/introduce/IntroduceBody.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/dao/introduce/IntroduceBrandDeployment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/dao/introduce/IntroduceDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/dao/introduce/IntroduceFooter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/dao/introduce/IntroduceHeader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/dao/introduce/IntroduceId.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/dao/introduce/IntroduceLanguage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/dao/introduce/IntroduceReason.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/dao/introduce/JoinUs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/dao/introduce/Reason.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/dao/introduce/SeoImg.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/logTransaction/BaseInfoRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/logTransaction/BaseRequestDataLog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/logTransaction/BaseResponseDataLog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/logTransaction/LogTransactionBase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/request/BaseRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/request/WsRequestBase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/response/ResponseBase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/response/ResponseBaseEditor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/response/ResponseData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/response/ResponseDataEditor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/response/ResponseDataPadding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/model/response/ResponsePadding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/repository/AboutUsLanguageRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/repository/AboutUsRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/repository/ApiRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/repository/ApproveRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/repository/BookKolsLanguageRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/repository/BrandPortalLanguageRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/repository/BrandPortalRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/repository/BrandRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/repository/CampaignRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/repository/CareerRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/repository/ChannelInteractionRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/repository/CityRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/repository/ContactCustomerRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/repository/FooterLanguageRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/repository/FooterRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/repository/FunctionApiRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/repository/FunctionRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/repository/IndustryRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/repository/InfluencerPortalLanguageRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/repository/InfluencerPortalRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/repository/InfluencerRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/repository/IntroduceLanguageRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/repository/IntroduceRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/repository/KolsRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/repository/LogTransactionRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/repository/NewsLanguageRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/repository/NewsRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/repository/NewsTypeRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/repository/PersonalInfoRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/repository/PersonalRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/repository/RoleFunctionRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/repository/RolePersonalRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/repository/RoleProjectRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/repository/RoleRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/repository/TypesInteractionRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/repository/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/repository/fbRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/security/CustomAccessDeniedHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/security/JwtAuthenticationTokenFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/security/JwtService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/security/OAuthConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/security/RestAuthenticationEntryPoint.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/security/SecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/service/AboutUsService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/service/ApproveService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/service/BookKolsService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/service/BrandPortalService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/service/BrandService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/service/CampaignService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/service/ContactCustomerService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/service/FooterService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/service/FunctionApiService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/service/InfluencerService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/service/IntroduceService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/service/NewsService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/service/PersonalService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/service/PersonalTokenService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/service/RolePersonalService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/service/RoleProjectService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/service/RoleService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/service/UserSerivce.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/service/impl/AboutUsServiceimpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/service/impl/ApproveServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/service/impl/BookKolsImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/service/impl/BrandPortalServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/service/impl/BrandServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/service/impl/CampaignServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/service/impl/CustomerContactServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/service/impl/FooterServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/service/impl/FunctionApiImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/service/impl/InfluencerServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/service/impl/IntroduceServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/service/impl/LoginRestFb.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/service/impl/MailServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/service/impl/Mailservice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/service/impl/NewsServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/service/impl/PersonalServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/service/impl/PersonalTokenServiceImp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/service/impl/RolePersonalServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/service/impl/RoleProjectServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/service/impl/RoleServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/service/impl/SendMail.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/service/impl/UserServiceImp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/utils/DateUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/utils/FileCommon.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/utils/GoogleUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/utils/LogTransactionUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/utils/RequestUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/utils/SendSMS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/utils/StringUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/utils/ValidateUltils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitex/halago/utils/mgland_notify_client.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/google-services.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mgland.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/springframework/data/jpa/repository/annotations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/hitex/halago/HalagoApplicationTests.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2SBC1uYLu4OKv0QNpkJHDSi5z2N" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Halago/halago/halago/halago-dev",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "spring.configuration.checksum": "70b1d095bce33b4b3c61c8ed9c31466f",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.hitex.halago.config" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="HalagoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="halago" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hitex.halago.HalagoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="85210d24-4539-4768-af2e-7a735dc4b8f2" name="Changes" comment="" />
+      <created>1688610378540</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1688610378540</updated>
+      <workItem from="1688610379531" duration="1119000" />
+      <workItem from="1688611513035" duration="539000" />
+      <workItem from="1688623007738" duration="7330000" />
+      <workItem from="1688694335277" duration="2997000" />
+      <workItem from="1688711674458" duration="3520000" />
+    </task>
+    <task id="LOCAL-00001" summary="remove and clean code">
+      <created>1688715194097</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1688715194097</updated>
+    </task>
+    <task id="LOCAL-00002" summary="remove and clean code">
+      <created>1688715229349</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1688715229349</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="remove and clean code" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove and clean code" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hitex/halago/controller/InfluencerController.java</url>
+          <line>114</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hitex/halago/controller/ContactCustomerController.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
