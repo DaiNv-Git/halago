@@ -1,7 +1,6 @@
 package com.hitex.halago.service;
 
-import com.hitex.halago.model.DAO.Footer.FooterLanguage;
-import com.hitex.halago.model.Footer;
+import com.hitex.halago.model.dao.Footer.FooterLanguage;
 
 import java.util.List;
 

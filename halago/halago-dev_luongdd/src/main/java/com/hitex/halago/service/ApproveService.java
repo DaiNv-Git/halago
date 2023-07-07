@@ -1,7 +1,7 @@
 package com.hitex.halago.service;
 
 import com.hitex.halago.model.Approve;
-import com.hitex.halago.model.DAO.ApproveDao;
+import com.hitex.halago.model.dao.ApproveDao;
 
 import java.util.List;
 

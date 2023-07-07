@@ -1,8 +1,7 @@
 package com.hitex.halago.service.impl;
 
 import com.hitex.halago.config.Constant;
-import com.hitex.halago.model.DAO.BaseModel;
-import com.hitex.halago.model.DAO.brandPortal.*;
+import com.hitex.halago.model.dao.brandPortal.*;
 import com.hitex.halago.repository.BrandPortalRepository;
 import com.hitex.halago.service.BrandPortalService;
 import org.slf4j.Logger;
@@ -107,9 +106,9 @@ public class BrandPortalServiceImpl implements BrandPortalService {
             builder.append("where portal.id=lang.idBrandPortal ");
             Query query = entityManager.createQuery(builder.toString());
             List<Object[]> objects = query.getResultList();
-            List<com.hitex.halago.model.DAO.brandPortal.BrandPortal> brandPortals = new ArrayList<>();
+            List<com.hitex.halago.model.dao.brandPortal.BrandPortal> brandPortals = new ArrayList<>();
             for (Object[] object : objects) {
-                com.hitex.halago.model.DAO.brandPortal.BrandPortal brandPortal = new BrandPortal();
+                com.hitex.halago.model.dao.brandPortal.BrandPortal brandPortal = new BrandPortal();
                 brandPortal.setId((Integer) object[0]);
                 brandPortal.setTitle(String.valueOf(object[1]));
                 brandPortal.setTitle_en(String.valueOf(object[2]));
@@ -130,7 +129,7 @@ public class BrandPortalServiceImpl implements BrandPortalService {
             }
 
             try {
-                for (com.hitex.halago.model.DAO.brandPortal.BrandPortal brandPortal : brandPortals) {
+                for (com.hitex.halago.model.dao.brandPortal.BrandPortal brandPortal : brandPortals) {
                     if (Constant.HEADER == brandPortal.getType()) {
                         BrandPortalHeader brandPortalHeader = new BrandPortalHeader();
                         BeanUtils.copyProperties(brandPortal, brandPortalHeader);

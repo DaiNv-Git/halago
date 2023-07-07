@@ -1,7 +1,7 @@
 package com.hitex.halago.service;
 
 import com.hitex.halago.model.Campaign;
-import com.hitex.halago.model.DAO.CampaignDao;
+import com.hitex.halago.model.dao.CampaignDao;
 
 import java.util.List;
 

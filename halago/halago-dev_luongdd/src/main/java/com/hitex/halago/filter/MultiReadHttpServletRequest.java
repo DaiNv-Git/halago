@@ -30,9 +30,6 @@ public class MultiReadHttpServletRequest extends HttpServletRequestWrapper {
     }
 
     private void cacheInputStream() throws IOException {
-        /* Cache the inputstream in order to read it multiple times. For
-         * convenience, I use apache.commons IOUtils
-         */
         cachedBytes = new ByteArrayOutputStream();
         IOUtils.copy(super.getInputStream(), cachedBytes);
     }

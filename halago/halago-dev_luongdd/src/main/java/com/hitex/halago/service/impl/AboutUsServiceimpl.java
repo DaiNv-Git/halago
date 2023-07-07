@@ -1,8 +1,7 @@
 package com.hitex.halago.service.impl;
 
 import com.hitex.halago.config.Constant;
-import com.hitex.halago.model.AboutUs;
-import com.hitex.halago.model.DAO.AboutUs.AboutUsDao;
+import com.hitex.halago.model.dao.AboutUs.AboutUsDao;
 import com.hitex.halago.service.AboutUsService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

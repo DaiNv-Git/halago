@@ -1,7 +1,7 @@
 package com.hitex.halago.service.impl;
 
 
-import com.hitex.halago.model.DAO.*;
+import com.hitex.halago.model.dao.*;
 import com.hitex.halago.model.Personal;
 
 import com.hitex.halago.model.*;

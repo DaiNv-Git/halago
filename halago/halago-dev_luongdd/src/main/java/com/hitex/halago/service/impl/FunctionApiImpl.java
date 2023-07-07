@@ -1,8 +1,8 @@
 package com.hitex.halago.service.impl;
 
 import com.hitex.halago.config.Constant;
-import com.hitex.halago.model.DAO.FunctionApiDao;
-import com.hitex.halago.model.DAO.FunctionDao;
+import com.hitex.halago.model.dao.FunctionApiDao;
+import com.hitex.halago.model.dao.FunctionDao;
 import com.hitex.halago.model.Function;
 import com.hitex.halago.repository.FunctionRepository;
 import com.hitex.halago.service.FunctionApiService;
@@ -16,7 +16,6 @@ import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 @Service
 public class FunctionApiImpl implements FunctionApiService {

@@ -2,10 +2,8 @@ package com.hitex.halago.controller;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.hitex.halago.config.Constant;
-import com.hitex.halago.model.DAO.*;
+import com.hitex.halago.model.dao.*;
 import com.hitex.halago.model.Personal;
-import com.hitex.halago.model.RolePersonal;
 import com.hitex.halago.model.request.BaseRequest;
 import com.hitex.halago.model.response.ResponseBase;
 import com.hitex.halago.model.response.ResponseData;
@@ -13,9 +11,7 @@ import com.hitex.halago.repository.PersonalRepository;
 import com.hitex.halago.repository.RolePersonalRepository;
 import com.hitex.halago.service.PersonalService;
 import com.hitex.halago.service.impl.Mailservice;
-import com.hitex.halago.utils.DateUtils;
 import com.hitex.halago.utils.RequestUtils;
-import com.hitex.halago.utils.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -28,8 +24,6 @@ import javax.persistence.PersistenceContext;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
-
-import static com.hitex.halago.config.Constant.valiemail;
 
 @RestController
 public class PersonalController {

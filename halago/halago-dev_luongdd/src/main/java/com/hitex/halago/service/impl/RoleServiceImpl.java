@@ -1,7 +1,7 @@
 package com.hitex.halago.service.impl;
 
-import com.hitex.halago.model.DAO.RoleAccount;
-import com.hitex.halago.model.DAO.RoleDao;
+import com.hitex.halago.model.dao.RoleAccount;
+import com.hitex.halago.model.dao.RoleDao;
 import com.hitex.halago.model.Role;
 import com.hitex.halago.repository.RoleRepository;
 import com.hitex.halago.service.RoleService;

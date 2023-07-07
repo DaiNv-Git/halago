@@ -1,0 +1,9 @@
+.lgksPe:hover:enabled,
+.lgksPe:focus:enabled {
+  background-color: #02a7f6 !important;
+}
+
+.ant-menu-horizontal {
+  background-color: transparent;
+  border-bottom: none;
+}

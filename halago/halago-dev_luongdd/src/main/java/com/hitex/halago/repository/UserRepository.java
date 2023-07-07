@@ -1,6 +1,5 @@
 package com.hitex.halago.repository;
 
-import com.hitex.halago.model.DAO.UserDao;
 import com.hitex.halago.model.User;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;

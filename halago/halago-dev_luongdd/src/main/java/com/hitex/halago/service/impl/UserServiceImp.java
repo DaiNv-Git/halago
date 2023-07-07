@@ -1,10 +1,10 @@
 package com.hitex.halago.service.impl;
 
-import com.hitex.halago.model.DAO.AccountUser;
-import com.hitex.halago.model.DAO.FunctionApiDao;
-import com.hitex.halago.model.DAO.RoleDao;
-import com.hitex.halago.model.DAO.RoleFunction.RoleFunction;
-import com.hitex.halago.model.DAO.UserDao;
+import com.hitex.halago.model.dao.AccountUser;
+import com.hitex.halago.model.dao.FunctionApiDao;
+import com.hitex.halago.model.dao.RoleDao;
+import com.hitex.halago.model.dao.RoleFunction.RoleFunction;
+import com.hitex.halago.model.dao.UserDao;
 import com.hitex.halago.model.User;
 import com.hitex.halago.repository.UserRepository;
 import com.hitex.halago.service.FunctionApiService;
@@ -40,11 +40,11 @@ public class UserServiceImp implements UserSerivce {
 
     @Override
     public UserDao findUser(String username) {
-        List<Object[]> resukt = entityManager.createQuery("select u.id,u.username,u.password,r.name,u.role,u.email from User u,Role r where r.id=u.role  and u.username=:username  and (u.role = 1 or u.role = 3)").setParameter("username", username).getResultList();
+        List<Object[]> result = entityManager.createQuery("select u.id,u.username,u.password,r.name,u.role,u.email from User u,Role r where r.id=u.role  and u.username=:username  and (u.role = 1 or u.role = 3)").setParameter("username", username).getResultList();
         UserDao userDao = null;
-        if (!ObjectUtils.isEmpty(resukt)) {
+        if (!ObjectUtils.isEmpty(result)) {
             userDao = new UserDao();
-            Object[] o = resukt.get(0);
+            Object[] o = result.get(0);
             userDao.setId(Integer.parseInt(o[0].toString()));
             userDao.setUsername(String.valueOf(o[1]));
             userDao.setPassword(String.valueOf(o[2]));
@@ -74,11 +74,11 @@ public class UserServiceImp implements UserSerivce {
 
 
     @Override
-    public com.hitex.halago.model.DAO.User findAccount(String username) {
+    public com.hitex.halago.model.dao.User findAccount(String username) {
         User user = userrepository.findUser(username);
-        com.hitex.halago.model.DAO.User account = null;
+        com.hitex.halago.model.dao.User account = null;
         if (!ObjectUtils.isEmpty(user)) {
-            account = new com.hitex.halago.model.DAO.User();
+            account = new com.hitex.halago.model.dao.User();
             BeanUtils.copyProperties(user, account);
         }
         return account;

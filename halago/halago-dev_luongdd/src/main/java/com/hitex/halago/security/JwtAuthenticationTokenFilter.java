@@ -1,9 +1,6 @@
 package com.hitex.halago.security;
 
-import com.hitex.halago.model.DAO.PersonalToken;
-import com.hitex.halago.model.DAO.UserDao;
-import com.hitex.halago.model.Personal;
-import com.hitex.halago.service.PersonalService;
+import com.hitex.halago.model.dao.UserDao;
 import com.hitex.halago.service.PersonalTokenService;
 //import com.hitex.halago.service.UserSerivce;
 import com.hitex.halago.service.UserSerivce;
@@ -40,7 +37,7 @@ public class JwtAuthenticationTokenFilter extends UsernamePasswordAuthentication
         String authToken = httpRequest.getHeader(TOKEN_HEADER);
         if (jwtService.validateTokenLogin(authToken)) {
             String username = jwtService.getUsernameFromToken(authToken);
-            System.out.println("username: "+username);
+            System.out.println("username: "+ username);
 //            PersonalToken user = personalService.findByPhone(username);
             UserDao user=userService.findUser(username);
             System.out.println("roles 1: "+user.getAuthorities());

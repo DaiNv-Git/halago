@@ -1,7 +1,7 @@
 package com.hitex.halago.service.impl;
 
 import com.hitex.halago.config.Constant;
-import com.hitex.halago.model.DAO.introduce.*;
+import com.hitex.halago.model.dao.introduce.*;
 import com.hitex.halago.model.Introduce;
 import com.hitex.halago.repository.IntroduceRepository;
 import com.hitex.halago.service.IntroduceService;

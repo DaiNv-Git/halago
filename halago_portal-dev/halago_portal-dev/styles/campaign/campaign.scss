@@ -1,0 +1,161 @@
+@import "../variables";
+
+@mixin fontVsColor($fontSize, $color, $fontWeight) {
+  font-size: $fontSize;
+  color: $color;
+  font-weight: $fontWeight;
+}
+
+.campaign {
+  &-search {
+    padding: 0 55px;
+    padding-top: 40px;
+    &__tab {
+      .ant-tabs-top > .ant-tabs-nav::before,
+      .ant-tabs-top > .ant-tabs-nav .ant-tabs-ink-bar {
+        display: none;
+      }
+      .ant-tabs {
+        .ant-tabs-nav {
+          margin-bottom: 0;
+          .ant-tabs-tab-active {
+            background-color: #0c1e51;
+            border-radius: 25px;
+            .ant-tabs-tab-btn {
+              color: #fff !important;
+            }
+          }
+          .ant-tabs-tab {
+            width: 97px;
+            justify-content: center;
+            margin: 0 10px 0 0;
+            .ant-tabs-tab-btn {
+              color: #0c1e51;
+              font-family: $font-Roboto;
+            }
+          }
+          .ant-tabs-nav-wrap {
+            justify-content: center;
+          }
+        }
+      }
+    }
+    &__box {
+      padding-right: 50px;
+      .ant-input-group-addon {
+        background-color: #0c1e51;
+        @include fontVsColor(23px, #fff, normal);
+        cursor: pointer;
+      }
+      .ant-input-lg {
+        padding: 6.5px 20px;
+      }
+    }
+    &__select {
+      .ant-select-selector {
+        border-color: #d9d9d9 !important;
+        box-shadow: unset !important;
+      }
+      .ant-select-selection-placeholder {
+        font-family: $font-Roboto;
+        @include fontVsColor(14px, #242331, normal);
+      }
+      .ant-select-arrow {
+        color: #242331;
+      }
+    }
+    .ant-input-group.ant-input-group-compact > .ant-select:first-child > .ant-select-selector {
+      border-top-left-radius: 3px;
+      border-bottom-left-radius: 3px;
+      height: 45px;
+      width: 180px;
+    }
+    .ant-input-group-addon:last-child {
+      border-top-right-radius: 3px;
+      border-bottom-right-radius: 3px;
+    }
+    .ant-select-single.ant-select-lg:not(.ant-select-customize-input) .ant-select-selector {
+      padding: 0 25px;
+    }
+    .ant-select-single.ant-select-lg:not(.ant-select-customize-input)
+      .ant-select-selector
+      .ant-select-selection-placeholder {
+      line-height: 45px;
+    }
+  }
+  &-content {
+    padding: 50px 0;
+    &__item {
+      padding: 30px 20px;
+      height: 100%;
+      .ant-card {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        img {
+          height: 250px;
+          border: 1px solid #eee;
+          object-fit: cover;
+        }
+        .ant-card-body {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          .title {
+            font-size: 20px;
+            flex: 1;
+          }
+        }
+      }
+    }
+  }
+  &--row {
+    padding: 32px 0 8px;
+    border-top: 1px solid #0002;
+    &--title {
+      padding-left: 8px;
+      span {
+        font-weight: bold;
+        small {
+          color: red;
+        }
+      }
+    }
+  }
+  &--age {
+    .ant-form-item-control-input-content {
+      > * {
+        margin-left: 8px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .campaign {
+    &-search {
+      padding: 0 15px;
+      &__tab {
+        padding: 20px 0;
+      }
+      &__box {
+        padding-right: 0;
+        .anticon {
+          vertical-align: 0;
+        }
+      }
+      .ant-input-group.ant-input-group-compact > .ant-select:first-child > .ant-select-selector {
+        width: 130px;
+      }
+      .ant-select-single.ant-select-lg:not(.ant-select-customize-input) .ant-select-selector {
+        padding: 0 12px;
+      }
+      .ant-select-single.ant-select-lg:not(.ant-select-customize-input)
+        .ant-select-selector
+        .ant-select-selection-placeholder {
+        font-size: 11px;
+      }
+    }
+  }
+}

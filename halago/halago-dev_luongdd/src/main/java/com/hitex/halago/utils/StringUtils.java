@@ -2,7 +2,7 @@ package com.hitex.halago.utils;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.hitex.halago.config.Constant;
-import com.hitex.halago.model.DAO.introduce.SeoImg;
+import com.hitex.halago.model.dao.introduce.SeoImg;
 
 import java.util.ArrayList;
 import java.util.Random;

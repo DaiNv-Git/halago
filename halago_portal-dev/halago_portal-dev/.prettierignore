@@ -1,0 +1,9 @@
+// .eslintignore
+build/*
+public/*
+.next/*
+
+*.svg
+*.jpg
+*.png
+*.ico

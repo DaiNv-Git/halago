@@ -1,7 +1,6 @@
 package com.hitex.halago.service;
 
-import com.hitex.halago.model.DAO.*;
-import com.hitex.halago.model.Facebook;
+import com.hitex.halago.model.dao.*;
 import com.hitex.halago.model.Personal;
 
 import java.util.List;

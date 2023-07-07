@@ -1,0 +1,43 @@
+@import "./responsive";
+
+// font
+$font-Prompt: "Prompt", sans-serif;
+$font-PromptSBold: "Prompt-SemiBold", sans-serif;
+$font-PromptMedium: "Prompt-Medium", sans-serif;
+$font-Raleway: "Raleway", sans-serif;
+$font-RalewayBold: "Raleway-Bold", sans-serif;
+$font-RalewayEBold: "Raleway-ExtraBold", sans-serif;
+$font-RalewaySBold: "Raleway-SemiBold", sans-serif;
+$font-Inter: "Inter", sans-serif;
+$font-Roboto: "Roboto", sans-serif;
+$font-RobotoLight: "Roboto-Light", sans-serif;
+$font-RobotoBold: "Roboto-Bold", sans-serif;
+$font-RobotoMedium: "Roboto-Medium", sans-serif;
+$font-WorkSans: "Work Sans", sans-serif;
+$font-WorkSansBold: "WorkSans-Bold", sans-serif;
+$font-WorkSansSBold: "WorkSans-SemiBold", sans-serif;
+
+// color
+$black-small: #555555;
+$black-big: #0c1e51;
+$blue-small: #02a7f6;
+$orange-big: #ff9722;
+$color-white: #fff;
+$color-black: #000;
+
+//mixin
+@mixin style-text(
+  $font-family: $font-Prompt,
+  $font-size: 12px,
+  $font-weight: normal,
+  $font-style: normal,
+  $color: $black-small
+) {
+  font-family: $font-family;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  font-style: $font-style;
+  color: $color;
+}
+
+$container-main-width: 1400px;

@@ -1,0 +1,51 @@
+.bk {
+  &_section {
+    &_0 {
+      &_slider {
+        .slick-slide {
+          position: relative;
+          z-index: 1;
+          transition: all 0.2s ease-in-out;
+          opacity: 0.7;
+        }
+        .slick-center.slick-current {
+          transform: scale(1.5);
+          z-index: 2;
+          opacity: 1;
+        }
+      }
+    }
+    &_2 {
+      &_body {
+        &_right {
+          &_slider {
+            .slick-slider {
+              .slick-next,
+              .slick-prev {
+                &:focus,
+                &:hover {
+                  background: unset;
+                  color: unset;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .slick-slide img {
+    width: 100%;
+  }
+
+  .slick-dots {
+    bottom: 20px !important;
+  }
+
+  .my-masonry-grid_column {
+    width: 100% !important;
+  }
+}

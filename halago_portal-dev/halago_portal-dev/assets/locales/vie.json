@@ -1,0 +1,118 @@
+{
+  "header": {
+    "login": "Đăng nhập",
+    "register": "Đăng ký miễn phí",
+    "campaign": "Chiến dịch",
+    "home": "Giới thiệu",
+    "kol": "Book Kols",
+    "brand": "Seller",
+    "search": "Search",
+    "influencer": "Influencer",
+    "news": "Tin tức",
+    "profile": "Thông tin cá nhân",
+    "myCampaign": "Chiến dịch của bạn",
+    "information": "Thông tin",
+    "aboutUs": "Về chúng tôi",
+    "vision": "Tầm nhìn sứ mệnh",
+    "modal": {
+      "btnRegister": "Đăng ký",
+      "btnLogin": "Đăng nhập",
+      "titleRegisterBrand": "Đăng ký tài khoản nhà quảng cáo",
+      "titleLoginBrand": "Đăng nhập tài khoản nhà quảng cáo",
+      "titleLoginInfluencer": "Đăng nhập tài khoản Influencer",
+      "labelEmail": "Email",
+      "labelPassword": "Mật khẩu",
+      "labelName": "Người đăng ký",
+      "labelPhone": "Số điện thoại",
+      "labelBrandName": "Tên nhãn hàng",
+      "plhEmail": "Nhập email",
+      "plhPassword": "Nhập mật khẩu",
+      "plhName": "Nhập tên",
+      "plhPhone": "Nhập số điện thoại",
+      "plhBrandName": "Nhập tên nhãn hàng",
+      "titleResetPassword": "Đặt lại mật khẩu",
+      "textInputEmailResetPassword": "Nhập email đăng nhập của bạn để khôi phục lại mật khẩu"
+    }
+  },
+  "footer": {
+    "group": "My Hồng Hà Group quản lý và vận hành",
+    "address": "Địa chỉ",
+    "contact_w_us": "Kết nối với chúng tôi"
+  },
+  "common": {
+    "readMore": "Xem thêm",
+    "aboutUs": "Về chúng tôi",
+    "vision": "Tầm nhìn sứ mệnh"
+  },
+  "home": {
+    "s0": {
+      "btnMore": "Xem thêm Halago"
+    },
+    "s1": {
+      "title": "Halago mang đến gì cho brand?"
+    },
+    "s2": {
+      "title": "Tại sao nên chọn halago?",
+      "title2": "Những con số biết nói",
+      "influencer": "Influencer",
+      "kols": "KOLs",
+      "aStar": "Sao hạng A"
+    },
+    "s4": {
+      "title": "Khách hàng đăng ký để được tư vấn chiến dịch",
+      "plhName": "Họ và tên",
+      "plhPhone": "Số điện thoại",
+      "plhEmail": "Email",
+      "plhNote": "Ghi chú",
+      "title3": "Đăng ký tư vấn dịch vụ & báo giá",
+      "btnRegister": "Đăng ký",
+      "btnSend": "Gửi",
+      "title2": "Tham gia ngay cùng chúng tôi",
+      "text": "87.000 Khách hàng tại Đông Nam Á đã tin dùng sản phẩm của Halago. Bạn đã sẵn sàng trở thành đối tác tiếp theo của chúng tôi chưa?",
+      "text2": "Gọi hotline: 0906282222 để được tư vấn miễn phí",
+      "btnRegisterBrand": "Trở thành nhà quảng cáo",
+      "btnRegisterInfluencer": "Trở thành Influencer"
+    },
+    "s5": {
+      "title": "Tại sao halago ra đời"
+    },
+    "s6": {
+      "title": "Báo chí nói về Halago"
+    }
+  },
+  "kol": {
+    "sub": "Lượt thích",
+    "res": "Đăng ký",
+    "view": "Lượt xem",
+    "s1": {
+      "title": "Một số sao hạng A hợp tác với Halago"
+    },
+    "s2": {
+      "title": "Hàng nghìn KOLs nổi tiếng khác",
+      "title2": "Sao hạng A"
+    },
+    "s3": {
+      "title": "Nền tảng KOLs Marketing"
+    }
+  },
+  "brand": {
+    "typicalCampaign": "Chiến dịch tiêu biểu",
+    "customer": "Khách hàng",
+    "about": "Nói về Halago"
+  },
+  "influencer": {
+    "s1": {
+      "title": "Cơ Hội Trở Thành Người Nổi Tiếng"
+    },
+    "s3": {
+      "title": "Đăng ký ngay để có cơ hội gia tăng thu nhập!",
+      "title2": "Nhanh chóng - Cơ hội - Lan tỏa"
+    }
+  },
+  "news": {
+    "postsDiff": "Bài viết khác",
+    "internal": "Nội bộ",
+    "foreign": "Tin Influencer + Kols",
+    "papers": "Báo chí"
+  }
+}

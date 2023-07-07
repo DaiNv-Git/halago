@@ -1,0 +1,13 @@
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+    - node_modules/
+    - .next/cache/
+
+build:
+  script:
+    - npm install
+    - npm run build
+    - pm2 restart ecosystem.config.js
+  only:
+    - master

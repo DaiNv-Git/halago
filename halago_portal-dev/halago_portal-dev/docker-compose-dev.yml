@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+  app:
+    image: registry.gitlab.com/hitexglobal.com/webteam/haloga/halago_portal:dev
+    container_name: halago_portal_dev
+    restart: unless-stopped
+    ports:
+      - "9862:3000"

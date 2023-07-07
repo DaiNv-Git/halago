@@ -1,8 +1,7 @@
 package com.hitex.halago.service.impl;
 
-import com.hitex.halago.model.DAO.PersonalToken;
+import com.hitex.halago.model.dao.PersonalToken;
 import com.hitex.halago.service.PersonalTokenService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.persistence.EntityManager;

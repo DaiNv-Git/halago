@@ -1,8 +1,7 @@
 package com.hitex.halago.service;
 
-import com.hitex.halago.model.BookKols;
-import com.hitex.halago.model.DAO.bookKols.BookKolsDao;
-import com.hitex.halago.model.DAO.bookKols.KolsDao;
+import com.hitex.halago.model.dao.bookKols.BookKolsDao;
+import com.hitex.halago.model.dao.bookKols.KolsDao;
 
 public interface BookKolsService {
     KolsDao getListKols(String language);

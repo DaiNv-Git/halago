@@ -1,7 +1,6 @@
 package com.hitex.halago.service;
 
-import com.hitex.halago.model.DAO.introduce.IntroduceDao;
-import com.hitex.halago.model.DAO.introduce.IntroduceId;
+import com.hitex.halago.model.dao.introduce.IntroduceDao;
 
 public interface IntroduceService {
     IntroduceDao getListIntroduce(String language);

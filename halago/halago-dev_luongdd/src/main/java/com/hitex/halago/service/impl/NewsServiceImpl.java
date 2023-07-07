@@ -1,8 +1,8 @@
 package com.hitex.halago.service.impl;
 
 import com.hitex.halago.config.Constant;
-import com.hitex.halago.model.DAO.NewsDao;
-import com.hitex.halago.model.DAO.NewsTypeDao;
+import com.hitex.halago.model.dao.NewsDao;
+import com.hitex.halago.model.dao.NewsTypeDao;
 import com.hitex.halago.model.News;
 import com.hitex.halago.model.NewsLanguage;
 import com.hitex.halago.repository.NewsLanguageRepository;
@@ -10,14 +10,12 @@ import com.hitex.halago.repository.NewsRepository;
 import com.hitex.halago.service.NewsService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
-import java.math.BigInteger;
 import java.sql.Date;
 import java.util.ArrayList;
 import java.util.List;

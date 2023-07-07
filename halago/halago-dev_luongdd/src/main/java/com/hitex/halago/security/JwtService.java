@@ -85,7 +85,7 @@ public class JwtService {
         String username = null;
         try {
             JWTClaimsSet claims = getClaimsFromToken(token);
-            username = claims.getStringClaim(ROLE);
+            username = claims.getStringClaim(USERNAME);
         } catch (Exception e) {
             e.printStackTrace();
         }

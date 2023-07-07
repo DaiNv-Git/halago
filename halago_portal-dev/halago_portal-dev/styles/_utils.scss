@@ -1,0 +1,96 @@
+@import "./responsive";
+@import "./variables";
+
+.container-main {
+  max-width: $container-main-width;
+  margin: 0 auto;
+  padding: 0 20px;
+  @include screenMax1366 {
+    padding: 0 20px;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.d {
+  // display
+  &-b {
+    display: block !important;
+  }
+  &-i {
+    display: inline !important;
+    &b {
+      display: inline-block !important;
+    }
+  }
+}
+
+.t {
+  // text
+  &-center {
+    text-align: center;
+  }
+  &-b {
+    font-weight: bold !important;
+  }
+}
+
+.w {
+  &-100 {
+    width: 100% !important;
+  }
+  &-25 {
+    width: 25% !important;
+  }
+}
+
+.p {
+  &-4 {
+    padding: 4px !important;
+  }
+  &-8 {
+    padding: 8px !important;
+  }
+}
+
+.m {
+  //margin
+  &-0 {
+    margin: 0 !important;
+  }
+  &t {
+    &-16 {
+      margin-top: 16px !important;
+    }
+    &-32 {
+      margin-top: 32px !important;
+    }
+  }
+  &l {
+    &-0 {
+      margin-left: 0 !important;
+    }
+  }
+  &r {
+    &-8 {
+      margin-right: 8px !important;
+    }
+    &-16 {
+      margin-right: 16px !important;
+    }
+  }
+  &b {
+    &-16 {
+      margin-bottom: 16px !important;
+    }
+    &-32 {
+      margin-bottom: 32px !important;
+    }
+  }
+}

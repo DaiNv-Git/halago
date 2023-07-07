@@ -3,7 +3,7 @@ package com.hitex.halago.controller;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.hitex.halago.config.Constant;
-import com.hitex.halago.model.DAO.Footer.FooterLanguage;
+import com.hitex.halago.model.dao.Footer.FooterLanguage;
 import com.hitex.halago.model.Footer;
 import com.hitex.halago.model.request.BaseRequest;
 import com.hitex.halago.model.response.ResponseBase;
@@ -19,15 +19,13 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.util.ObjectUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.io.InputStream;
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
+
 @RestController
 public class PortalController {
     Logger logger = LoggerFactory.getLogger(PortalController.class);

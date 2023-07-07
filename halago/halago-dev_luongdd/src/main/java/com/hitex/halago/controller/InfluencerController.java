@@ -4,10 +4,10 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.hitex.halago.config.Constant;
 import com.hitex.halago.model.*;
-import com.hitex.halago.model.DAO.influencer.cms.InfluencerApproveCampaignDao;
-import com.hitex.halago.model.DAO.influencer.cms.InfluencerDao;
-import com.hitex.halago.model.DAO.influencer.portal.InfluencerPortalDao;
-import com.hitex.halago.model.DAO.influencer.portal.InfluencerPortalId;
+import com.hitex.halago.model.dao.influencer.cms.InfluencerApproveCampaignDao;
+import com.hitex.halago.model.dao.influencer.cms.InfluencerDao;
+import com.hitex.halago.model.dao.influencer.portal.InfluencerPortalDao;
+import com.hitex.halago.model.dao.influencer.portal.InfluencerPortalId;
 import com.hitex.halago.model.request.BaseRequest;
 import com.hitex.halago.model.response.ResponseBase;
 import com.hitex.halago.model.response.ResponseData;
@@ -23,6 +23,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.util.ObjectUtils;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -60,7 +61,7 @@ public class InfluencerController {
 
 
     @RequestMapping(value = "/findInfluencerById", method = RequestMethod.POST)
-    public ResponseEntity<?> findInfluencerById(InputStream inputStream) {
+    public ResponseEntity<?> findInfluencerById(@RequestBody InputStream inputStream) {
         try {
             responseData = new ResponseData(1, "Không có dữ liệu trả về", null);
             BaseRequest baseRequest = RequestUtils.convertToBaseRequest(inputStream);
@@ -85,7 +86,7 @@ public class InfluencerController {
     }
 
     @RequestMapping(value = "/findInfluencerByName", method = RequestMethod.POST)
-    public ResponseEntity<?> findPersonalByName(InputStream inputStream) {
+    public ResponseEntity<?> findPersonalByName(@RequestBody InputStream inputStream) {
         try {
             responseData = new ResponseData(1, "Không có dữ liệu trả về", null);
             BaseRequest baseRequest = RequestUtils.convertToBaseRequest(inputStream);
@@ -109,7 +110,7 @@ public class InfluencerController {
     }
 
     @RequestMapping(value = "/getListInfluencer", method = RequestMethod.POST)
-    public ResponseEntity<?> findAllPersonal(InputStream inputStream) {
+    public ResponseEntity<?> findAllPersonal( InputStream inputStream,@RequestBody String input) {
         try {
             BaseRequest baseRequest = RequestUtils.convertToBaseRequest(inputStream);
             String role = jwtService.getUsernameFromToken(baseRequest.getToken());
@@ -210,7 +211,7 @@ public class InfluencerController {
     }
 
     @RequestMapping(value = "/updateInfluencer", method = RequestMethod.POST)
-    public ResponseEntity<?> updatePersonal(InputStream inputStream) {
+    public ResponseEntity<?> updatePersonal(@RequestBody InputStream inputStream) {
         try {
             responseData = new ResponseData(Constant.FAILED, "Cập nhật Influencer thất bại", null);
             BaseRequest baseRequest = RequestUtils.convertToBaseRequest(inputStream);
@@ -277,7 +278,7 @@ public class InfluencerController {
     }
 
     @RequestMapping(value = "/updateInfluencerPortal", method = RequestMethod.POST)
-    public ResponseEntity<?> updateInfluencerPortal(InputStream inputStream) {
+    public ResponseEntity<?> updateInfluencerPortal(@RequestBody InputStream inputStream) {
         try {
             responseData = new ResponseData(Constant.FAILED, "Cập nhật Influencer thất bại", null);
             BaseRequest baseRequest = RequestUtils.convertToBaseRequest(inputStream);
@@ -339,7 +340,7 @@ public class InfluencerController {
     }
 
     @RequestMapping(value = "/deleteInfluencer", method = RequestMethod.POST)
-    public ResponseEntity<?> deletePersonal(InputStream inputStream) {
+    public ResponseEntity<?> deletePersonal(@RequestBody InputStream inputStream) {
         try {
             responseData = new ResponseData(1, "Dữ liệu đầu vào không hợp lệ", null);
             BaseRequest baseRequest = RequestUtils.convertToBaseRequest(inputStream);
@@ -368,7 +369,7 @@ public class InfluencerController {
     }
 
     @RequestMapping(value = "/listCity", method = RequestMethod.POST)
-    public ResponseEntity<?> ListCity(InputStream inputStream) {
+    public ResponseEntity<?> ListCity(@RequestBody InputStream inputStream) {
         try {
             BaseRequest baseRequest = RequestUtils.convertToBaseRequest(inputStream);
             if (baseRequest.getWsRequest() != null) {
@@ -382,7 +383,7 @@ public class InfluencerController {
     }
 
     @RequestMapping(value = "/listCareer", method = RequestMethod.POST)
-    public ResponseEntity<?> ListCareer(InputStream inputStream) {
+    public ResponseEntity<?> ListCareer(@RequestBody InputStream inputStream) {
         try {
             BaseRequest baseRequest = RequestUtils.convertToBaseRequest(inputStream);
             if (baseRequest.getWsRequest() != null) {
@@ -396,7 +397,7 @@ public class InfluencerController {
     }
 
     @RequestMapping(value = "/listChannel", method = RequestMethod.POST)
-    public ResponseEntity<?> ListChannel(InputStream inputStream) {
+    public ResponseEntity<?> ListChannel(@RequestBody InputStream inputStream) {
         try {
             BaseRequest baseRequest = RequestUtils.convertToBaseRequest(inputStream);
             if (baseRequest.getWsRequest() != null) {
@@ -410,7 +411,7 @@ public class InfluencerController {
     }
 
     @RequestMapping(value = "/listTypesInteraction", method = RequestMethod.POST)
-    public ResponseEntity<?> listTypesInteraction(InputStream inputStream) {
+    public ResponseEntity<?> listTypesInteraction(@RequestBody InputStream inputStream) {
         try {
             BaseRequest baseRequest = RequestUtils.convertToBaseRequest(inputStream);
             if (baseRequest.getWsRequest() != null) {
@@ -424,7 +425,7 @@ public class InfluencerController {
     }
 
     @RequestMapping(value = "/listIndustry", method = RequestMethod.POST)
-    public ResponseEntity<?> listIndustry(InputStream inputStream) {
+    public ResponseEntity<?> listIndustry(@RequestBody InputStream inputStream) {
         try {
             BaseRequest baseRequest = RequestUtils.convertToBaseRequest(inputStream);
             if (baseRequest.getWsRequest() != null) {
@@ -438,7 +439,7 @@ public class InfluencerController {
     }
 
     @RequestMapping(value = "/findInfluencerPortal", method = RequestMethod.POST)
-    public ResponseEntity<?> findInfluencerPortal(InputStream inputStream) {
+    public ResponseEntity<?> findInfluencerPortal(@RequestBody InputStream inputStream) {
         try {
             BaseRequest baseRequest = RequestUtils.convertToBaseRequest(inputStream);
             ObjectMapper objectMapper = new ObjectMapper();
@@ -465,7 +466,7 @@ public class InfluencerController {
     }
 
     @RequestMapping(value = "/getListCampaignApply", method = RequestMethod.POST)
-    public ResponseEntity<?> getListCampaignApply(InputStream inputStream) {
+    public ResponseEntity<?> getListCampaignApply(@RequestBody InputStream inputStream) {
         try {
             BaseRequest baseRequest = RequestUtils.convertToBaseRequest(inputStream);
             String role = jwtService.getUsernameFromToken(baseRequest.getToken());
@@ -493,11 +494,10 @@ public class InfluencerController {
     }
 
     @RequestMapping(value = "/getListInfluencerPgae", method = RequestMethod.POST)
-    public ResponseEntity<?> getListInfluencerPgae(InputStream inputStream) {
+    public ResponseEntity<?> getListInfluencerPgae(@RequestBody InputStream inputStream) {
         try {
             responseData = new ResponseData(1, "Không có dữ liệu trả về", null);
             BaseRequest baseRequest = RequestUtils.convertToBaseRequest(inputStream);
-//            String role = jwtService.getUsernameFromToken(baseRequest.getToken());
             ObjectMapper objectMapper = new ObjectMapper();
             JsonNode jsonNode = objectMapper.readTree(objectMapper.writeValueAsString(baseRequest.getWsRequest()));
             if (baseRequest.getWsRequest() != null) {
@@ -528,7 +528,7 @@ public class InfluencerController {
     }
 
     @RequestMapping(value = "/updateInfluencerPage", method = RequestMethod.POST)
-    public ResponseEntity<?> updateInfluencerPage(InputStream inputStream) {
+    public ResponseEntity<?> updateInfluencerPage(@RequestBody InputStream inputStream) {
         try {
             responseData = new ResponseData(Constant.FAILED, "Cập nhật thông tin thất bại", null);
             BaseRequest baseRequest = RequestUtils.convertToBaseRequest(inputStream);
@@ -582,7 +582,7 @@ public class InfluencerController {
     }
 
     @RequestMapping(value = "/findInfluencerPortalId", method = RequestMethod.POST)
-    public ResponseEntity<?> findInfluencerPortalId(InputStream inputStream) {
+    public ResponseEntity<?> findInfluencerPortalId(@RequestBody InputStream inputStream) {
         try {
             BaseRequest baseRequest = RequestUtils.convertToBaseRequest(inputStream);
             ObjectMapper objectMapper = new ObjectMapper();

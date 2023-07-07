@@ -1,0 +1,20 @@
+export const FIELD_NAME_CREATE_BRAND_REGISTER = "representativeName";
+export const FIELD_NAME_CREATE_BRAND_NAME = "brandName";
+export const FIELD_NAME_CREATE_BRAND_EMAIL = "brandEmail";
+export const FIELD_NAME_CREATE_BRAND_PHONE = "brandPhone";
+export const FIELD_NAME_CREATE_BRAND_PASSWORD = "password";
+export const FIELD_NAME_CREATE_BRAND_LINK = "website";
+export const FIELD_NAME_CREATE_BRAND_DESCRIPTION = "description";
+export const FIELD_NAME_CREATE_BRAND_LOGO = "logo";
+
+export const LIST_FIELD_CREATE_BRAND = [
+  FIELD_NAME_CREATE_BRAND_REGISTER,
+  FIELD_NAME_CREATE_BRAND_NAME,
+  FIELD_NAME_CREATE_BRAND_EMAIL,
+  FIELD_NAME_CREATE_BRAND_PHONE,
+  FIELD_NAME_CREATE_BRAND_PASSWORD,
+];
+
+export const FIELD_BRAND_LOGIN_U = "username";
+export const FIELD_BRAND_LOGIN_P = "pass";
+export const LIST_FIELD_BRAND_LOGIN = [FIELD_BRAND_LOGIN_U, FIELD_BRAND_LOGIN_P];

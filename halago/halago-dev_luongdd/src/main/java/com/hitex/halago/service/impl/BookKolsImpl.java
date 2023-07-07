@@ -2,9 +2,9 @@ package com.hitex.halago.service.impl;
 
 import com.hitex.halago.config.Constant;
 import com.hitex.halago.model.BookKols;
-import com.hitex.halago.model.DAO.BaseModel;
-import com.hitex.halago.model.DAO.bookKols.*;
-import com.hitex.halago.model.DAO.introduce.SeoImg;
+import com.hitex.halago.model.dao.BaseModel;
+import com.hitex.halago.model.dao.bookKols.*;
+import com.hitex.halago.model.dao.introduce.SeoImg;
 import com.hitex.halago.repository.KolsRepository;
 import com.hitex.halago.service.BookKolsService;
 import com.hitex.halago.utils.StringUtils;

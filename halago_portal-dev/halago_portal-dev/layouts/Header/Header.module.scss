@@ -1,0 +1,222 @@
+@import "styles/variables";
+@import "styles/responsive";
+
+.logo{
+  width: 30px;
+  background-color: black;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  overflow: hidden;
+  object-fit: cover;
+}
+.logo:hover{
+  background-color: red;
+}
+
+.header {
+  width: 100vw;
+  &_logo {
+    margin-right: 64px;
+  }
+
+  &_wrapper {
+    display: flex;
+    justify-content: space-between;
+    @include screenMax575 {
+      display: none;
+    }
+  }
+  &_left {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  &_right {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  &_login {
+    @include style-text($font-Prompt, 13px, normal, normal, $blue-small);
+    &_home {
+      @include style-text($font-Prompt, 13px, normal, normal, #fff);
+    }
+  }
+  &_register {
+    width: 150px;
+    height: 36px;
+    border-radius: 3px;
+    box-shadow: 0 7px 12px 0 rgba(9, 72, 155, 0.1);
+    margin-right: 20px;
+    background-color: $blue-small;
+    @include style-text($font-Prompt, 12px, bold, normal, #fff);
+    &_home {
+      width: 150px;
+      height: 36px;
+      border-radius: 3px;
+      box-shadow: 0 7px 12px 0 rgba(9, 72, 155, 0.1);
+      margin-right: 20px;
+      background-color: #fff;
+      @include style-text($font-Prompt, 12px, bold, normal, $blue-small);
+    }
+  }
+  &_icon {
+    color: $black-small;
+    margin: 4px;
+    &_home {
+      margin: 4px;
+      color: #fff;
+    }
+  }
+  &_divider {
+    border-color: $black-small;
+    &_home {
+      border-color: #fff;
+    }
+  }
+  &_language {
+    color: $black-small;
+    padding: 0;
+    font-weight: bold;
+    &_home {
+      font-weight: bold;
+      // color: #fff;
+      padding: 0;
+    }
+  }
+}
+
+.menu {
+  display: inline-flex;
+  margin-bottom: 0;
+  &_item {
+    margin-right: 40px;
+    > a {
+      @include style-text($font-Prompt, 13px);
+    }
+    &:nth-last-child(1) {
+      margin-right: 0;
+    }
+  }
+}
+
+.modal {
+  &_content {
+    padding: 0;
+    @media screen and (min-width: 800px) {
+      padding: 24px;
+    }
+  }
+  &_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    &_left {
+      display: flex;
+      &_register,
+      &_login {
+        @include style-text($font-WorkSans, 13px);
+        &:focus,
+        &:hover {
+          @include style-text($font-WorkSansSBold, 13px, 600, normal, $black-big);
+        }
+      }
+      &_action {
+        &_active {
+          @include style-text($font-WorkSansSBold, 13px, 600, normal, $black-big);
+        }
+      }
+    }
+    &_right {
+      &_seller,
+      &_reviewer {
+        height: 38px;
+        width: 100px;
+        background-color: #f4f6fc;
+        border-radius: 20px !important;
+        text-align: center;
+        line-height: 38px;
+        border: none;
+        @include style-text($font-WorkSans, 13px, 500, normal, #2b2b2b);
+        &::before {
+          display: none !important;
+        }
+      }
+      &_user {
+        border-radius: 20px;
+        border: solid 2px #dde1ea;
+        background-color: #f4f6fc;
+        display: flex;
+        &_active {
+          background-color: #0c1e51 !important;
+          color: #ffffff !important;
+        }
+      }
+    }
+  }
+  &_body {
+    &_tabs {
+      > div:nth-child(1) {
+        display: none;
+      }
+      &_title {
+        text-align: center;
+        margin: 32px 0;
+        @include style-text($font-WorkSansSBold, 20px, 600, normal, $black-big);
+        &_more {
+          @include style-text($font-WorkSans, 13px, normal, normal, #000);
+        }
+      }
+      &_form {
+        &_item {
+          > div:nth-child(1) {
+            text-align: left;
+            @media screen and (max-width: 577px) {
+              margin-left: 0 !important;
+            }
+            @media screen and (min-width: 576px) {
+              text-transform: uppercase;
+              @include style-text($font-WorkSansSBold, 12px, 600, normal, $black-small);
+            }
+            > label {
+              height: 100%;
+              &::after {
+                display: none !important;
+              }
+            }
+          }
+          &_input {
+            height: 40px;
+            border: solid 1px #dde1ea;
+            background-color: #ffffff;
+          }
+          &_button {
+            margin-top: 16px;
+            width: 100%;
+            // width: 140.8px;
+            height: 44px;
+            background-color: $black-big;
+            text-transform: uppercase;
+            border-radius: 6px;
+            @include style-text($font-RobotoMedium, 12px, 500, normal, #fff);
+          }
+          &_a {
+            @include style-text($font-Roboto, 13px, normal, normal, $blue-small);
+          }
+        }
+      }
+      &_button {
+        &_fb {
+          width: 277px;
+          height: 50px;
+          border: solid 1px #dde1ea;
+          background-color: #ffffff;
+          text-transform: uppercase;
+          @include style-text($font-Roboto, 14px, normal, normal, $black-big);
+        }
+      }
+    }
+  }
+}

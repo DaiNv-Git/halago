@@ -1,0 +1,142 @@
+@import "../variables";
+
+.search {
+  .banner {
+    position: relative;
+    img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .banner-content {
+      position: absolute;
+      top: 40px;
+      width: 100%;
+      &__title {
+        @include style-text($font-WorkSansBold, 36px, bold, normal, #0c1e51);
+        letter-spacing: 0.72px;
+      }
+      &__desc {
+        @include style-text($font-RobotoBold, 14px, normal, normal, #0c1e51);
+      }
+    }
+    .search-basic {
+      max-width: 1100px;
+      margin: -45px auto 45px ;
+      padding: 0 50px;
+      @media screen and (max-width: 600px) {
+        padding: 0 20px;
+        margin-bottom: 20px ;
+      }
+      .basic-tab {
+        display: flex;
+        justify-content: flex-end;
+        > div {
+          width: 200px;
+          height: 33px;
+          background-color: #0c1e51;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-transform: uppercase;
+          @include style-text($font-RobotoBold, 11px, normal, normal, #6f727b);
+          cursor: pointer;
+        }
+        .tab-basic {
+          clip-path: polygon(9% 0, 100% 0, 91% 100%, 0 100%);
+        }
+        .tab-avand {
+          clip-path: polygon(9% 0, 100% 0, 100% 100%, 0 100%);
+          margin-left: -17px;
+        }
+        .active {
+          color: #fff !important;
+        }
+      }
+      .basic-content {
+        box-shadow: 0 9px 45px 0 rgba(0, 0, 0, 0.16);
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        @media screen and (max-width: 1100px) {
+          grid-template-columns: 1fr 1fr;
+          &__item-btn {
+            grid-column: 1 / span 2;
+            padding: 10px;
+          }
+        }
+        &__item {
+          padding: 17px 20px;
+          background-color: #fff;
+          border-right: 1px solid #dfdfdf;
+          .item-label {
+            @include style-text($font-WorkSansBold, 12px, 600, normal, #1c2023);
+            text-transform: uppercase;
+          }
+          .ant-select {
+            width: 100%;
+          }
+        }
+        &__item-btn {
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: #064ebd;
+          color: #fff;
+          height: 100%;
+          gap: 10px;
+          .anticon {
+            font-size: 25px;
+          }
+        }
+      }
+    }
+  }
+  &-form {
+    margin: 35px 7rem;
+    padding: 30px;
+    border-radius: 3px;
+    background-color: #ebf3fa;
+    .title {
+      @include style-text($font-WorkSansBold, 16px, 600, normal, #0c1e51);
+      letter-spacing: 0.32px;
+      display: flex;
+      justify-content: space-between;
+    }
+    &__item {
+      padding: 10px 25px;
+      .ant-form-item-label > label {
+        @include style-text($font-WorkSansBold, 12px, 600, normal, #555);
+        letter-spacing: 0.24px;
+        text-transform: uppercase;
+      }
+    }
+    .search-btn {
+      .cancel {
+        @include style-text($font-RobotoBold, 12px, 600, normal, #555);
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+      .ant-form-item-control-input {
+        padding: 0 25px;
+        text-align: right;
+      }
+      button {
+        background-color: #ff9722;
+        width: 160px;
+        height: 44px;
+        margin-left: 45px;
+        span {
+          @include style-text($font-RobotoBold, 12px, 500, normal, #fff);
+          text-transform: uppercase;
+        }
+      }
+    }
+    .search-btn button:hover,
+    .search-btn button:focus {
+      color: #fff;
+      border-color: #ff9722;
+    }
+  }
+}
+

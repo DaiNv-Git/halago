@@ -4,11 +4,11 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.hitex.halago.config.Constant;
 import com.hitex.halago.model.Brand;
-import com.hitex.halago.model.DAO.AccountUser;
-import com.hitex.halago.model.DAO.BrandDao;
-import com.hitex.halago.model.DAO.RoleFunction.RoleFunction;
-import com.hitex.halago.model.DAO.influencer.cms.InfluencerDao;
-import com.hitex.halago.model.DAO.UserDao;
+import com.hitex.halago.model.dao.AccountUser;
+import com.hitex.halago.model.dao.BrandDao;
+import com.hitex.halago.model.dao.RoleFunction.RoleFunction;
+import com.hitex.halago.model.dao.influencer.cms.InfluencerDao;
+import com.hitex.halago.model.dao.UserDao;
 import com.hitex.halago.model.Influencer;
 import com.hitex.halago.model.User;
 import com.hitex.halago.model.request.BaseRequest;
@@ -28,7 +28,6 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.social.facebook.api.Facebook;
 import org.springframework.social.facebook.api.impl.FacebookTemplate;
 import org.springframework.util.ObjectUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -76,7 +75,7 @@ public class UserController {
                     pass = jsonNode.get("password").asText();
                 }
                 UserDao personal = userSerivce.findUser(username);
-                com.hitex.halago.model.DAO.User user = userSerivce.findAccount(username);
+                com.hitex.halago.model.dao.User user = userSerivce.findAccount(username);
                 if (personal != null) {
                     String passs = personal.getPassword();
                     if (pass.equals(passs)) {
@@ -117,7 +116,7 @@ public class UserController {
                     pass = jsonNode.get("password").asText();
                 }
                 UserDao personal = userSerivce.findUserPotal(username);
-                com.hitex.halago.model.DAO.User user = userSerivce.findAccount(username);
+                com.hitex.halago.model.dao.User user = userSerivce.findAccount(username);
                 if (personal != null) {
                     String passs = personal.getPassword();
                     if (pass.equals(passs)) {
@@ -354,7 +353,7 @@ public class UserController {
                     String avatar =  "https://graph.facebook.com/"+fbID+"/picture";
                     String accessToken = jwtService.generateTokenLogin(fbID, Constant.INFLUENCER);
                     Influencer influencerByFbId = influencerRepository.findInfluencerByFbId(fbID);
-                    com.hitex.halago.model.DAO.User user = new com.hitex.halago.model.DAO.User();
+                    com.hitex.halago.model.dao.User user = new com.hitex.halago.model.dao.User();
                     if (ObjectUtils.isEmpty(influencerByFbId)) {
                         Influencer influencer = new Influencer();
                         influencer.setFbId(fbID);

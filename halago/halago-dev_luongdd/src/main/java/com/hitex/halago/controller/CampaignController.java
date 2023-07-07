@@ -1,43 +1,28 @@
 package com.hitex.halago.controller;
-
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.hitex.halago.config.Constant;
 import com.hitex.halago.model.Campaign;
-import com.hitex.halago.model.DAO.CampaignDao;
+import com.hitex.halago.model.dao.CampaignDao;
 import com.hitex.halago.model.request.BaseRequest;
 import com.hitex.halago.model.response.ResponseBase;
 import com.hitex.halago.model.response.ResponseData;
 import com.hitex.halago.repository.CampaignRepository;
 import com.hitex.halago.security.JwtService;
 import com.hitex.halago.service.CampaignService;
-import com.hitex.halago.utils.DateUtils;
-import com.hitex.halago.utils.FileCommon;
 import com.hitex.halago.utils.RequestUtils;
-import org.apache.commons.io.FileUtils;
-import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.util.ObjectUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
-//import sun.misc.BASE64Decoder;
-
-import javax.servlet.http.HttpServletRequest;
-import java.io.File;
-import java.io.FileOutputStream;
 import java.io.InputStream;
-import java.text.SimpleDateFormat;
-import java.util.Base64;
 import java.util.Date;
 import java.util.List;
-
-import static com.hitex.halago.config.Constant.valiemail;
 
 @RestController
 public class CampaignController {
@@ -55,7 +40,6 @@ public class CampaignController {
     @RequestMapping(value = "/findCampaignById", method = RequestMethod.POST)
     public ResponseEntity<?> findCampaignById(InputStream inputStream) {
         try {
-            responseData = new ResponseData(1, "Không có dữ liệu trả về", null);
             BaseRequest baseRequest = RequestUtils.convertToBaseRequest(inputStream);
             if (baseRequest.getWsRequest() != null) {
                 ObjectMapper objectMapper = new ObjectMapper();
@@ -71,31 +55,6 @@ public class CampaignController {
         }
         return ResponseEntity.status(HttpStatus.OK).body(responseData);
     }
-
-//    @RequestMapping(value = "/findCampaignByName", method = RequestMethod.POST)
-//    public ResponseEntity<?> findCampaignByName(InputStream inputStream) {
-//        try {
-//            responseData = new ResponseData(1, "Không có dữ liệu trả về", null);
-//            BaseRequest baseRequest = RequestUtils.convertToBaseRequest(inputStream);
-//            String role = jwtService.getUsernameFromToken(baseRequest.getToken());
-//            if (baseRequest.getWsRequest() != null) {
-//                ObjectMapper objectMapper = new ObjectMapper();
-//                JsonNode jsonNode = objectMapper.readTree(objectMapper.writeValueAsString(baseRequest.getWsRequest()));
-//                if (Constant.BRAND.equals(role) || Constant.ADMIN.equals(role)) {
-//                    if (jsonNode.get("id") != null) {
-//                        String name = jsonNode.get("name").asText();
-//                        CampaignDao campaign = campaignService.findCampaignByName(name);
-//                        responseData = new ResponseData(Constant.SUCCESS, "Tìm kiếm thành công", new ResponseBase(null, campaign));
-//                    }
-//                } else {
-//                    responseData = new ResponseData(Constant.FAILED, "Bạn không có quyền tìm kiếm", null);
-//                }
-//            }
-//        } catch (Exception e) {
-//            logger.info(e.getMessage(), e.getCause());
-//        }
-//        return ResponseEntity.status(HttpStatus.OK).body(responseData);
-//    }
 
     @RequestMapping(value = "/getListCampaign", method = RequestMethod.POST)
     public ResponseEntity<?> getListCampaign(InputStream inputStream) {
@@ -246,32 +205,14 @@ public class CampaignController {
     }
 
     @RequestMapping(value = "/getListCampaignByBrand", method = RequestMethod.POST)
-    public ResponseEntity<?> getListCampaignByBrand(InputStream inputStream) {
+    public ResponseEntity<?> getListCampaignByBrand() {
         try {
-            responseData = new ResponseData(1, "Không có dữ liệu trả về", null);
-            BaseRequest baseRequest = RequestUtils.convertToBaseRequest(inputStream);
-            String role = jwtService.getUsernameFromToken(baseRequest.getToken());
-            ObjectMapper objectMapper = new ObjectMapper();
-            JsonNode jsonNode = objectMapper.readTree(objectMapper.writeValueAsString(baseRequest.getWsRequest()));
-            if (baseRequest.getWsRequest() != null) {
-                if (Constant.BRAND.equals(role) || Constant.ADMIN.equals(role) || Constant.STAFF.equals(role)) {
-                    String status = String.valueOf(jsonNode.get("status").asText());
-                    if (org.apache.commons.lang3.StringUtils.isEmpty(status)) {
-                        status = "-1";
-                    }
-                    int idBrand = jsonNode.get("idBrand").asInt();
-                    Integer pageSize = jsonNode.get("pageSize").asInt();
-                    Integer pageNumber = jsonNode.get("pageNumber").asInt();
-                    List<CampaignDao> campaigns = campaignService.getListCampaignByBrand(idBrand, pageSize, pageNumber,Integer.parseInt(status.replace(".0","")));
+                    List<CampaignDao> campaigns = campaignService.getListCampaignByBrand(1, 2, 3,Integer.parseInt("".replace(".0","")));
                     ResponseBase responseBase = new ResponseBase();
                     responseBase.setSiRes(null);
                     responseBase.setData(campaigns);
-                    responseBase.setTotal(campaignRepository.getListCampaignByBrand(idBrand));
+                    responseBase.setTotal(campaignRepository.getListCampaignByBrand(1));
                     responseData = new ResponseData(Constant.SUCCESS, "Tìm kiếm thành công", responseBase);
-                } else {
-                    responseData = new ResponseData(Constant.FAILED, "Bạn không có quyền xem danh sách", null);
-                }
-            }
         } catch (Exception e) {
             logger.info(e.getMessage(), e);
         }

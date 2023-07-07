@@ -1,9 +1,9 @@
 package com.hitex.halago.service;
 
-import com.hitex.halago.model.DAO.influencer.cms.InfluencerApproveCampaignDao;
-import com.hitex.halago.model.DAO.influencer.cms.InfluencerDao;
-import com.hitex.halago.model.DAO.influencer.portal.InfluencerPortalDao;
-import com.hitex.halago.model.DAO.influencer.portal.InfluencerPortalId;
+import com.hitex.halago.model.dao.influencer.cms.InfluencerApproveCampaignDao;
+import com.hitex.halago.model.dao.influencer.cms.InfluencerDao;
+import com.hitex.halago.model.dao.influencer.portal.InfluencerPortalDao;
+import com.hitex.halago.model.dao.influencer.portal.InfluencerPortalId;
 import com.hitex.halago.model.Influencer;
 
 import java.util.List;

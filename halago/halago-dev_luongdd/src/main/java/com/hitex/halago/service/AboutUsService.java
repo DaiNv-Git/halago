@@ -1,7 +1,6 @@
 package com.hitex.halago.service;
 
-import com.hitex.halago.model.AboutUs;
-import com.hitex.halago.model.DAO.AboutUs.AboutUsDao;
+import com.hitex.halago.model.dao.AboutUs.AboutUsDao;
 
 public interface AboutUsService {
     AboutUsDao getAboutUs(String language);

@@ -1,0 +1,87 @@
+@import "../variables";
+
+@mixin fontVsColor($fontSize, $color, $fontWeight) {
+  font-size: $fontSize;
+  color: $color;
+  font-weight: $fontWeight;
+}
+
+.campaign-detail {
+  &__bread {
+    .ant-breadcrumb {
+      font-family: $font-Roboto;
+      color: #747474;
+    }
+    .ant-breadcrumb > span:last-child {
+      color: #02a7f6;
+    }
+    .ant-breadcrumb a {
+      color: #747474;
+    }
+  }
+  &__intro {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: $font-Roboto;
+    .left {
+      background-color: #f2f3f6;
+      padding: 60px 75px;
+      height: 100%;
+      border: 1px solid #f2f3f6;
+    }
+    .intro-title {
+      @include fontVsColor(22px, #0c1e51, bold);
+      line-height: 1.82;
+      letter-spacing: 0.97px;
+      padding: 23px 0;
+    }
+    .intro-desc {
+      @include fontVsColor(14px, #555555, normal);
+    }
+  }
+  &__content {
+    padding: 20px;
+    .content-tab {
+      &__detail {
+        background-color: #f1f7f9;
+        padding: 37px 44px;
+        .title {
+          @include fontVsColor(20px, #0c1e51, 600);
+          text-transform: uppercase;
+          margin-bottom: 35px;
+        }
+      }
+    }
+  }
+  .img-banner {
+    width: 100%;
+    border: 1px solid #f2f3f6;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .campaign-detail {
+    &__intro {
+      padding: 0 15px;
+      .left {
+        padding: 20px;
+      }
+      .right {
+        height: 300px !important;
+      }
+    }
+    &__bread {
+      margin-bottom: 15px;
+    }
+    &__content {
+      .content-tab .ant-tabs .ant-tabs-nav .ant-tabs-tab {
+        padding-right: 0;
+      }
+      .content-tab__detail {
+        padding: 15px;
+      }
+    }
+  }
+}

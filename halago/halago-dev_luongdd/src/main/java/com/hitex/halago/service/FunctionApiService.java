@@ -1,8 +1,7 @@
 package com.hitex.halago.service;
 
-import com.hitex.halago.model.DAO.FunctionApiDao;
-import com.hitex.halago.model.DAO.FunctionDao;
-import com.hitex.halago.model.Function;
+import com.hitex.halago.model.dao.FunctionApiDao;
+import com.hitex.halago.model.dao.FunctionDao;
 
 import java.util.List;
 

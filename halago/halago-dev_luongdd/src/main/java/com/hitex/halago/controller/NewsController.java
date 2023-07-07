@@ -3,8 +3,8 @@ package com.hitex.halago.controller;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.hitex.halago.config.Constant;
-import com.hitex.halago.model.DAO.NewsDao;
-import com.hitex.halago.model.DAO.NewsTypeDao;
+import com.hitex.halago.model.dao.NewsDao;
+import com.hitex.halago.model.dao.NewsTypeDao;
 import com.hitex.halago.model.News;
 import com.hitex.halago.model.NewsLanguage;
 import com.hitex.halago.model.NewsType;
@@ -28,7 +28,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.io.InputStream;
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 

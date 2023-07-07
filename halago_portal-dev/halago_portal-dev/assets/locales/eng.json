@@ -1,0 +1,118 @@
+{
+  "header": {
+    "login": "Login",
+    "register": "Register",
+    "campaign": "Campaign",
+    "home": "Introduce",
+    "kol": "Book Kols",
+    "brand": "Seller",
+    "search": "Search",
+    "influencer": "Influencer",
+    "news": "News",
+    "profile": "Profile",
+    "myCampaign": "My Campaign",
+    "information": "Information",
+    "aboutUs": "About Us",
+    "vision": "Vision Mission",
+    "modal": {
+      "btnRegister": "Register",
+      "btnLogin": "Login",
+      "titleRegisterBrand": "Register to brand account",
+      "titleLoginBrand": "Login to brand account",
+      "titleLoginInfluencer": "Login to Influencer account",
+      "labelEmail": "Email",
+      "labelPassword": "Password",
+      "labelName": "Your name",
+      "labelPhone": "Phone",
+      "labelBrandName": "Brand name",
+      "plhEmail": "Enter Email",
+      "plhPassword": "Enter Password",
+      "plhName": "Enter Your name",
+      "plhPhone": "Enter Phone number",
+      "plhBrandName": "Enter Brand name",
+      "titleResetPassword": "Reset password",
+      "textInputEmailResetPassword": "Enter your email to reset password"
+    }
+  },
+  "footer": {
+    "group": "My Hong Ha Group manages and operates",
+    "address": "Address",
+    "contact_w_us": "Contact with us"
+  },
+  "common": {
+    "readMore": "Read more",
+    "aboutUs": "About Us",
+    "vision": "Vision Mission"
+  },
+  "home": {
+    "s0": {
+      "btnMore": "View more Halago"
+    },
+    "s1": {
+      "title": "Benefit to brand?"
+    },
+    "s2": {
+      "title": "Choosing Halago",
+      "title2": "Talking numbers",
+      "influencer": "Influencer",
+      "kols": "KOLs",
+      "aStar": "Class A star"
+    },
+    "s4": {
+      "title": "Sign up for advisory",
+      "plhName": "Full name",
+      "plhPhone": "Phone number",
+      "plhEmail": "Email",
+      "plhNote": "Note",
+      "title3": "Sign up for a service consultation & get a quote",
+      "btnRegister": "Register",
+      "btnSend": "Send",
+      "title2": "Join us",
+      "text": "87,000 Customers in Southeast Asia have trusted Halago products. Are you ready to become our next partner?",
+      "text2": "Call the hotline: 0906282222 for a free consultation",
+      "btnRegisterBrand": "become an Advertiser",
+      "btnRegisterInfluencer": "Become an Influencer"
+    },
+    "s5": {
+      "title": "Introduce about Halago"
+    },
+    "s6": {
+      "title": "Newspaper"
+    }
+  },
+  "kol": {
+    "sub": "Like",
+    "res": "Register",
+    "view": "View",
+    "s1": {
+      "title": "Class A star partner"
+    },
+    "s2": {
+      "title": "Thousands of other famous KOLs",
+      "title2": "Class A star"
+    },
+    "s3": {
+      "title": "KOLs Marketing platform"
+    }
+  },
+  "brand": {
+    "typicalCampaign": "Typical Campaigns",
+    "customer": "Customer talk",
+    "about": "About Halago"
+  },
+  "influencer": {
+    "s1": {
+      "title": "Chance to Become a Celebrity"
+    },
+    "s3": {
+      "title": "Sign up now for a chance to increase your income!",
+      "title2": "Quick - Opportunity - Spread"
+    }
+  },
+  "news": {
+    "postsDiff": "Other posts",
+    "internal": "Internal News",
+    "foreign": "Foreign News",
+    "papers": "Paper News"
+  }
+}

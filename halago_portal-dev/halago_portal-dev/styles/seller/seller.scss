@@ -1,0 +1,188 @@
+@import "../variables";
+
+.seller {
+  .banner {
+    width: 100%;
+    height: 450px;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    &-content {
+      text-align: center;
+      margin-top: 112.5px;
+      &__title {
+        @include style-text($font-WorkSans, 68px, bold, normal, #fff);
+      }
+      &__desc {
+        @include style-text($font-Roboto, 19px, normal, normal, #02a7f6);
+        text-transform: uppercase;
+        letter-spacing: 1.24px;
+      }
+      &__btn {
+        margin-top: 45px;
+        a {
+          background-color: #ff9722;
+          padding: 12px 35px;
+          border-radius: 3px;
+          @include style-text($font-Raleway, 12px, bold, normal, #fff);
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+  .network {
+    &-image {
+      padding: 55px 0;
+    }
+    &-title {
+      @include style-text($font-RobotoBold, 21px, 500, normal, #0c1e51);
+      letter-spacing: 0.42px;
+    }
+  }
+  .highlight {
+    position: relative;
+    &-title {
+      margin-bottom: 65px;
+      h3 {
+        @include style-text($font-WorkSansBold, 32px, bold, normal, #0c1e51);
+      }
+    }
+    &-content {
+      .content-tab {
+        &__detail {
+          padding-left: 35px;
+          .detail-desc {
+            display: flex;
+            max-width: 50%;
+            position: absolute;
+            padding: 30px 20px;
+            bottom: -60px;
+            background-color: #333;
+            color: #fff;
+            &__left {
+              margin-right: 35px;
+              h3 {
+                @include style-text($font-RalewayBold, 36px, bold, normal, #fff);
+              }
+              p {
+                @include style-text($font-RobotoBold, 11px, normal, normal, #ff9722);
+              }
+            }
+            &__right {
+              @include style-text($font-RobotoBold, 14px, normal, normal, #d9d9d9);
+              padding-top: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .customer {
+    margin-top: 10em;
+    background-color: #f1f7f9;
+    padding: 90px 50px;
+    &-title {
+      @include style-text($font-WorkSansBold, 32px, bold, normal, #0c1e51);
+    }
+    &-item {
+      margin-right: 10px;
+      &__desc {
+        box-shadow: 0 6px 36px 0 rgba(111, 152, 214, 0.1);
+        background-color: #ffffff;
+        padding: 35px 15px;
+      }
+      &__info {
+        padding: 22px 0;
+        display: flex;
+        align-items: center;
+        img {
+          margin-right: 22px;
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+        }
+        .account {
+          .name {
+            @include style-text($font-RobotoBold, 14px, 500, normal, #2b2b2b);
+          }
+        }
+      }
+    }
+    .custom-col:nth-child(4) {
+      .customer-item {
+        margin-right: 0;
+      }
+    }
+  }
+  &-register {
+    &__content {
+      padding: 0 65px;
+      .content-image {
+        img {
+          width: 100%;
+        }
+      }
+      .content-form {
+        padding: 50px;
+        background-image: linear-gradient(
+          268deg,
+          #fef5ff 100%,
+          rgba(233, 238, 242, 0.8) 20%,
+          rgba(228, 236, 239, 0.1) -1%
+        );
+        height: 100%;
+        .ant-input,
+        .custom-btn {
+          height: 40px;
+        }
+        .custom-btn {
+          background-color: #02a7f6;
+          text-transform: uppercase;
+          font-size: 12px;
+          font-family: $font-RobotoBold;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .seller {
+    .network {
+      &-image {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .page-content {
+    padding: 15px 0 0;
+  }
+  .seller {
+    .highlight-content {
+      .content-tab__detail {
+        padding-left: 0;
+        .detail-desc {
+          max-width: unset;
+          bottom: -104px;
+        }
+      }
+    }
+    .customer {
+      padding: 15px;
+    }
+    &-register {
+      margin-top: 20px;
+      &__content {
+        padding: 0;
+        .content-form {
+          padding: 35px 12px;
+        }
+      }
+    }
+  }
+}

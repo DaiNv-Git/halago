@@ -1,7 +1,7 @@
 package com.hitex.halago.service.impl;
 
 import com.hitex.halago.config.Constant;
-import com.hitex.halago.model.DAO.Footer.FooterLanguage;
+import com.hitex.halago.model.dao.Footer.FooterLanguage;
 import com.hitex.halago.model.Footer;
 import com.hitex.halago.repository.FooterRepository;
 import com.hitex.halago.service.FooterService;
@@ -10,7 +10,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.util.ObjectUtils;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;

@@ -1,7 +1,7 @@
 package com.hitex.halago.service;
 
-import com.hitex.halago.model.DAO.NewsDao;
-import com.hitex.halago.model.DAO.NewsTypeDao;
+import com.hitex.halago.model.dao.NewsDao;
+import com.hitex.halago.model.dao.NewsTypeDao;
 import com.hitex.halago.model.News;
 
 import java.util.List;

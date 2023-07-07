@@ -1,11 +1,10 @@
 package com.hitex.halago.controller;
-
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.hitex.halago.config.Constant;
 import com.hitex.halago.model.AboutUs;
 import com.hitex.halago.model.AboutUsLanguage;
-import com.hitex.halago.model.DAO.AboutUs.AboutUsDao;
+import com.hitex.halago.model.dao.AboutUs.AboutUsDao;
 import com.hitex.halago.model.request.BaseRequest;
 import com.hitex.halago.model.response.ResponseBase;
 import com.hitex.halago.model.response.ResponseData;
@@ -23,9 +22,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
-
 import java.io.InputStream;
-import java.util.List;
 
 @RestController
 public class AboutUsController {
@@ -51,10 +48,8 @@ public class AboutUsController {
             BaseRequest baseRequest = RequestUtils.convertToBaseRequest(inputStream);
             ObjectMapper objectMapper = new ObjectMapper();
             JsonNode jsonNode = objectMapper.readTree(objectMapper.writeValueAsString(baseRequest.getWsRequest()));
-//            String role = jwtService.getUsernameFromToken(baseRequest.getToken());
             if (baseRequest.getWsRequest() != null) {
                 ResponseBase responseBase = new ResponseBase();
-//                if (Constant.ADMIN.equals(role) || Constant.STAFF.equals(role)) {
                 String language;
                 if (jsonNode.has("language")) {
                     language = jsonNode.get("language").asText();
@@ -70,10 +65,6 @@ public class AboutUsController {
                 }
 
                     responseData = new ResponseData(Constant.SUCCESS, "Tìm kiếm thành công", responseBase);
-
-//                } else {
-//                    responseData = new ResponseData(Constant.FAILED, "Bạn không có quyền", null);
-//                }
             }
         } catch (Exception e) {
             logger.info(e.getMessage(), e);
@@ -126,7 +117,6 @@ public class AboutUsController {
             BaseRequest baseRequest = RequestUtils.convertToBaseRequest(inputStream);
             ObjectMapper objectMapper = new ObjectMapper();
             JsonNode jsonNode = objectMapper.readTree(objectMapper.writeValueAsString(baseRequest.getWsRequest()));
-//            String role = jwtService.getUsernameFromToken(baseRequest.getToken());
             if (baseRequest.getWsRequest() != null) {
                 ResponseBase responseBase = new ResponseBase();
                 String language;
@@ -142,13 +132,7 @@ public class AboutUsController {
                     responseBase.setSiRes(null);
                     responseBase.setData(aboutUsDao);
                 }
-//                if (Constant.ADMIN.equals(role) || Constant.STAFF.equals(role)) {
-
-                    responseData = new ResponseData(Constant.SUCCESS, "Tìm kiếm thành công", responseBase);
-
-//                } else {
-//                    responseData = new ResponseData(Constant.FAILED, "Bạn không có quyền", null);
-//                }
+                responseData = new ResponseData(Constant.SUCCESS, "Tìm kiếm thành công", responseBase);
             }
         } catch (Exception e) {
             logger.info(e.getMessage(), e);

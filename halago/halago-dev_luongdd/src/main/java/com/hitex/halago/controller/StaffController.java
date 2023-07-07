@@ -4,10 +4,10 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.hitex.halago.config.Constant;
 import com.hitex.halago.model.*;
-import com.hitex.halago.model.DAO.FunctionApiDao;
-import com.hitex.halago.model.DAO.FunctionDao;
-import com.hitex.halago.model.DAO.RoleAccount;
-import com.hitex.halago.model.DAO.RoleDao;
+import com.hitex.halago.model.dao.FunctionApiDao;
+import com.hitex.halago.model.dao.FunctionDao;
+import com.hitex.halago.model.dao.RoleAccount;
+import com.hitex.halago.model.dao.RoleDao;
 import com.hitex.halago.model.request.BaseRequest;
 import com.hitex.halago.model.response.ResponseBase;
 import com.hitex.halago.model.response.ResponseData;
@@ -30,7 +30,6 @@ import org.springframework.web.bind.annotation.RestController;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 public class StaffController {

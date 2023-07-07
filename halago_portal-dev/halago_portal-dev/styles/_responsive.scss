@@ -1,0 +1,63 @@
+$screenMax414: "only screen and (max-width: 414px)";
+$screenMax575: "only screen and (max-width: 576px)";
+$screenMin576: "only screen and (min-width: 576px)";
+$screenMin768: "only screen and (min-width: 768px)";
+$screenMin992: "only screen and (min-width: 992px)";
+$screenMin1200: "only screen and (min-width: 1200px)";
+$screenMax1366: "only screen and (max-width: 1366px)";
+$screenMin1600: "only screen and (min-width: 1600px)";
+$screenMin1920: "only screen and (min-width: 1920px)";
+
+@mixin screenMax414 {
+  @media #{$screenMax414} {
+    @content;
+  }
+}
+
+@mixin screenMax575 {
+  @media #{$screenMax575} {
+    @content;
+  }
+}
+
+@mixin screenMin576 {
+  @media #{$screenMin576} {
+    @content;
+  }
+}
+
+@mixin screenMin768 {
+  @media #{$screenMin768} {
+    @content;
+  }
+}
+
+@mixin screenMin992 {
+  @media #{$screenMin992} {
+    @content;
+  }
+}
+
+@mixin screenMin1200 {
+  @media #{$screenMin1200} {
+    @content;
+  }
+}
+
+@mixin screenMax1366 {
+  @media #{$screenMax1366} {
+    @content;
+  }
+}
+
+@mixin screenMin1600 {
+  @media #{$screenMin1600} {
+    @content;
+  }
+}
+
+@mixin screenMin1920 {
+  @media #{$screenMin1920} {
+    @content;
+  }
+}

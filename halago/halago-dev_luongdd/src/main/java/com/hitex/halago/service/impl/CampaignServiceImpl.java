@@ -3,8 +3,8 @@ package com.hitex.halago.service.impl;
 
 import com.hitex.halago.config.Constant;
 import com.hitex.halago.model.Campaign;
-import com.hitex.halago.model.DAO.CampaignDao;
-import com.hitex.halago.model.DAO.influencer.cms.InfluencerApproveCampaignDao;
+import com.hitex.halago.model.dao.CampaignDao;
+import com.hitex.halago.model.dao.influencer.cms.InfluencerApproveCampaignDao;
 import com.hitex.halago.repository.CampaignRepository;
 import com.hitex.halago.service.CampaignService;
 import org.slf4j.Logger;

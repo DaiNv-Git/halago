@@ -3,11 +3,9 @@ package com.hitex.halago.service.impl;
 
 import com.hitex.halago.config.Constant;
 import com.hitex.halago.model.Approve;
-import com.hitex.halago.model.DAO.ApproveDao;
-import com.hitex.halago.model.DAO.ApproveInfluencer;
+import com.hitex.halago.model.dao.ApproveDao;
 import com.hitex.halago.repository.ApproveRepository;
 import com.hitex.halago.service.ApproveService;
-import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

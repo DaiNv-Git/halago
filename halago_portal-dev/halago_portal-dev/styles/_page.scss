@@ -1,0 +1,42 @@
+@import "variables";
+
+.page {
+  &--wrapper {
+    background-color: $color-white;
+    height: 100%;
+    overflow: scroll;
+    padding: 4px;
+  }
+  &--header {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &--title {
+    margin-bottom: 1rem;
+  }
+  &--tool {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  &--table {
+    &--row {
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.tool {
+  &__filter {
+    width: 120px;
+  }
+}
+
+.d-flex {
+  display: flex !important;
+}
